@@ -3,48 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transporte Bem - Serviços</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Lembre-se de vincular seu arquivo CSS aqui -->
+    <title>TransporteBem - Logística</title>
+    <style>
+        /* Estilos CSS podem ser adicionados aqui */
+        .servico {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .servico h3 {
+            margin: 0;
+            padding: 0;
+        }
+        .descricao {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Transporte Bem</h1>
-        <nav>
-            <ul>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        
+        <!-- Cabeçalho da página aqui -->
     </header>
 
     <section id="servicos">
         <h2>Nossos Serviços</h2>
-        <div class="servico">
+        <div class="servico" onclick="toggleServico(this)">
             <h3>Transporte de Carga</h3>
-            <p>Oferecemos transporte de carga confiável e seguro para atender às suas necessidades de logística. Nossa frota moderna e equipe experiente garantem entregas pontuais e seguras.</p>
+            <p class="descricao">Oferecemos transporte de carga confiável e seguro para atender às suas necessidades de logística. Nossa frota moderna e equipe experiente garantem entregas pontuais e seguras.</p>
         </div>
         
-        <div class="servico">
+        <div class="servico" onclick="toggleServico(this)">
             <h3>Armazenamento</h3>
-            <p>Contamos com instalações de armazenamento de última geração para atender às suas necessidades de armazenamento. Seus produtos estarão em boas mãos conosco.</p>
+            <p class="descricao">Contamos com instalações de armazenamento de última geração para atender às suas necessidades de armazenamento. Seus produtos estarão em boas mãos conosco.</p>
         </div>
         
-        <div class="servico">
+        <div class="servico" onclick="toggleServico(this)">
             <h3>Distribuição</h3>
-            <p>Nossa rede de distribuição eficiente garante que seus produtos cheguem aos destinos finais de maneira rápida e eficaz. Confie em nós para distribuição de qualidade.</p>
+            <p class="descricao">Nossa rede de distribuição eficiente garante que seus produtos cheguem aos destinos finais de maneira rápida e eficaz. Confie em nós para distribuição de qualidade.</p>
         </div>
         
-        <div class="servico">
+        <div class="servico" onclick="toggleServico(this)">
             <h3>Logística Reversa</h3>
-            <p>Gerenciamos eficazmente o fluxo de devoluções, garantindo um processo de logística reversa eficiente e sem complicações. Simplificamos o retorno de produtos.</p>
+            <p class="descricao">Gerenciamos eficazmente o fluxo de devoluções, garantindo um processo de logística reversa eficiente e sem complicações. Simplificamos o retorno de produtos.</p>
         </div>
     </section>
 
-    <!-- Resto do seu conteúdo aqui -->
-
-    <footer>
-        <p>&copy; 2023 Transporte Bem. Todos os direitos reservados.</p>
-    </footer>
+    <!-- JavaScript para expandir/contrair os serviços -->
+    <script>
+        function toggleServico(element) {
+            const descricao = element.querySelector('.descricao');
+            descricao.style.display = descricao.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
+

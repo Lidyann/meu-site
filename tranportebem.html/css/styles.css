@@ -1,0 +1,87 @@
+/* Reset de estilos padrão */
+body, h1, h2, p, ul, li {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Definições globais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #f1f0f0;
+    color: #c71f1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* Estilos da seção de banner */
+#banner {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos das seções de conteúdo */
+.section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #940e0e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Botão */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

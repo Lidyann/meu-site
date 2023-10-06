@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransporteBem - Logística</title>
+    <style>
+        /* Estilos CSS podem ser adicionados aqui */
+        .contato {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .mensagem-sucesso {
+            display: none;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho da página aqui -->
+    </header>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <div class="contato">
+            <form id="formulario-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="mensagem-sucesso" id="mensagem-sucesso">Mensagem enviada com sucesso!</div>
+        </div>
+    </section>
+
+    <!-- JavaScript para lidar com o envio do formulário -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const formularioContato = document.getElementById('formulario-contato');
+            const mensagemSucesso = document.getElementById('mensagem-sucesso');
+
+            formularioContato.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Simule o envio do formulário (pode ser substituído pela lógica real de envio)
+                setTimeout(function () {
+                    mensagemSucesso.style.display = 'block';
+                    formularioContato.reset();
+                }, 1000); // Simula um atraso de 1 segundo para o envio
+
+                // Em um ambiente real, você enviaria os dados para um servidor de backend para processamento.
+            });
+        });
+    </script>
+</body>
+</html>

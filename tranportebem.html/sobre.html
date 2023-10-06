@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransporteBem - Logística</title>
+    <style>
+        /* Estilos CSS podem ser adicionados aqui */
+        .sobre {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .sobre h3 {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <!-- Cabeçalho da página aqui -->
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <div class="sobre">
+            <h3>Nossa História</h3>
+            <p>Somos uma empresa de logística dedicada a fornecer soluções de transporte eficientes desde 1990.</p>
+        </div>
+        
+        <div class="sobre">
+            <h3>Nossa Missão</h3>
+            <p>Nossa missão é entregar suas mercadorias de forma segura e pontual, superando suas expectativas de logística.</p>
+        </div>
+        
+        <div class="sobre">
+            <h3>Nossa Equipe</h3>
+            <p>Nossa equipe é composta por profissionais experientes e dedicados que estão prontos para atender às suas necessidades de logística.</p>
+        </div>
+    </section>
+
+    <!-- JavaScript para expandir/contrair as seções sobre nós -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const secoesSobre = document.querySelectorAll('.sobre');
+
+            secoesSobre.forEach(function (secao) {
+                secao.addEventListener('click', function () {
+                    const descricao = this.querySelector('p');
+                    descricao.style.display = descricao.style.display === 'none' ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
